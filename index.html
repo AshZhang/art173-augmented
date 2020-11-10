@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+    <a-scene id="scene" background="color: #75cdeb">
+        <a-assets>
+            <img id="broken_image" src="broken_image.png">
+            <img id="bsod" src="bsod.jpg">
+        </a-assets>
+        <a-camera position="0 1 0">
+        </a-camera>
+        <a-light type="ambient" color="#A8A8A8" light=""></a-light>
+        <a-light type="directional" color="#FFF" intensity="0.45" position="1 2 1" light=""></a-light>
+        <a-sky src="#bsod" color="rgb(255,255,255)"></a-sky>
+
+        <a-plane src="#broken_image" height="5" width="5" position="0 0 -10" rotation="0 0 0"></a-plane>
+        <a-cone height="1.25" radius-bottom="0.8333" radius-top="0" position="-1 -0.75 -10" shadow="" rotation="0 0 45"
+            color="#E5509E"></a-cone>
+        <a-sphere color="#489f2d" radius="0.65" position="-0.5 0.75 -10"></a-sphere>
+        <a-box color="#215aeb" depth="1" height="1" width="1" position="1 -0.5 -9"></a-box>
+
+        <a-plane src="#broken_image" height="5" width="5" position="-10 0 0" rotation="0 90 0"></a-plane>
+        <a-cone height="1.25" radius-bottom="0.8333" radius-top="0" position="-10 -0.75 1" shadow="" rotation="45 0 0"
+            color="#E5509E"></a-cone>
+        <a-sphere color="#489f2d" radius="0.65" position="-10 0.75 0.5"></a-sphere>
+        <a-box color="#215aeb" depth="1" height="1" width="1" position="-9 -0.5 -1" rotation="0 90 0"></a-box>
+
+        <a-plane src="#broken_image" height="5" width="5" position="0 0 10" rotation="0 180 0"></a-plane>
+        <a-cone height="1.25" radius-bottom="0.8333" radius-top="0" position="1 -0.75 10" shadow="" rotation="0 180 45"
+            color="#E5509E"></a-cone>
+        <a-sphere color="#489f2d" radius="0.65" position="0.5 0.75 10"></a-sphere>
+        <a-box color="#215aeb" depth="1" height="1" width="1" position="-1 -0.5 9"></a-box>
+
+        <a-plane src="#broken_image" height="5" width="5" position="10 0 0" rotation="0 -90 0"></a-plane>
+        <a-cone height="1.25" radius-bottom="0.8333" radius-top="0" position="10 -0.75 -1" shadow="" rotation="-45 0 0"
+            color="#E5509E"></a-cone>
+        <a-sphere color="#489f2d" radius="0.65" position="10 0.75 -0.5"></a-sphere>
+        <a-box color="#215aeb" depth="1" height="1" width="1" position="9 -0.5 1" rotation="0 90 0"></a-box>
+    </a-scene>
+</body>
+
+</html>
